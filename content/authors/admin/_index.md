@@ -1,10 +1,10 @@
 ---
 # Display name
-title: Alice Wu 吳恩達
+title: Nicolas MAGNE TANG
 
 # Full name (for SEO)
-first_name: Alice
-last_name: Wu
+first_name: Nicolas
+last_name: MAGNE TANG 
 
 # Status emoji
 status:

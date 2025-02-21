@@ -7,7 +7,7 @@ first_name: Nicolas
 last_name: MAGNE TANG 
 
 # Status emoji
-status: 
+status: Open to offers
   icon: ☕️
 
 # Is this the primary user of the site?
@@ -18,7 +18,7 @@ role: Battery Storage Systems and Smart Grids
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Grenoble INP
+  - name: Segula Technologies Automobile Matra
     url: https://www.grenoble-inp.fr
 
 # Short bio (displayed in user profile at end of posts)
@@ -65,7 +65,7 @@ social:
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: uploads/resume.pdf
+    link: uploads/Resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'nicomagnet@gmail.com'

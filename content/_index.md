@@ -85,7 +85,7 @@ sections:
         - title: System Engineer – Energy Storage Systems & Performance
           company: Segula Technologies (Ampere - Renault Group)
           company_url: ''
-          company_logo: org-segula
+          # company_logo: org-segula
           location: Paris, France
           date_start: '2024-01-01'
           date_end: ''
@@ -98,7 +98,7 @@ sections:
         - title: Battery Algorithm Development Engineer (Freelance)
           company: Swiss Energy Storage Company
           company_url: ''
-          company_logo: org-freelance
+          # company_logo: org-freelance
           location: Geneva, Switzerland
           date_start: '2023-08-01'
           date_end: '2023-10-01'
@@ -110,7 +110,7 @@ sections:
         - title: R&D Engineer – Li-ion Battery Performance Optimization
           company: Electrochemistry Laboratory (LEPMI - Grenoble INP)
           company_url: ''
-          company_logo: org-lepmi
+          # company_logo: org-lepmi
           location: Grenoble, France
           date_start: '2019-08-01'
           date_end: '2023-04-01'
@@ -122,7 +122,7 @@ sections:
         - title: Development Engineer – Second-Life Battery Analysis
           company: Electrochemistry Laboratory (LEPMI - Grenoble INP)
           company_url: ''
-          company_logo: org-lepmi
+          # company_logo: org-lepmi
           location: Grenoble, France
           date_start: '2019-02-01'
           date_end: '2019-07-01'
@@ -134,7 +134,7 @@ sections:
         - title: R&D Engineer – Energy Management Optimization
           company: Laboratory of Fluid Mechanics and UAV, Barcelona, Spain
           company_url: ''
-          company_logo: org-uav
+          # company_logo: org-uav
           location: Barcelona, Spain
           date_start: '2018-07-01'
           date_end: '2018-09-01'
@@ -146,7 +146,7 @@ sections:
         - title: Engineer – Electrical Analysis for Industrial Projects
           company: Centrales Villageoises (Collective PV Production), Vercors, France
           company_url: ''
-          company_logo: org-pv
+          # company_logo: org-pv
           location: Vercors, France
           date_start: '2018-02-01'
           date_end: '2018-06-01'
@@ -158,7 +158,7 @@ sections:
         - title: Instrumentation & Automation Engineer
           company: Mi Bus UIO (Startup)
           company_url: ''
-          company_logo: org-mibus
+          # company_logo: org-mibus
           location: Quito, Ecuador
           date_start: '2015-06-01'
           date_end: '2018-02-01'

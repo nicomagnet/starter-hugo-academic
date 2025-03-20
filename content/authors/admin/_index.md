@@ -19,7 +19,7 @@ role: Battery Storage Systems and Smart Grids
 # Organizations/Affiliations to show in About widget
 organizations:
   - name: Segula Technologies Automobile Matra
-    url: https://www.grenoble-inp.fr
+    # url: https://www.grenoble-inp.fr
 
 # Short bio (displayed in user profile at end of posts)
 bio: Expert in electrical and electronic systems with a Ph.D. on Modeling and Analysis of Li-ion Batteries and BMS. Optimizing performance and anticipating future behaviors for enhanced battery technology.
@@ -73,5 +73,7 @@ email: 'nicomagnet@gmail.com'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am an experienced energy professional with a strong background in technology innovative solutions in the field of energy and batteries. Originally from Quito, Ecuador, where I participated in technological ventures and projects and later moved to France to continue my master and PhD studies. I have quickly adapted to this beautiful country and wish to continue working here, taking advantage of my experience in battery modeling and a strategic vision with meaningful impact. Outside the professional field, I enjoy cycling, cooking, and traveling to discover new fascinating places and enrich my knowledge. I also enjoy exploring interesting technological projects and I love DIY.
+I am a system engineer specializing in battery performance, modeling, and validation, with a strong background in energy storage systems and innovative technologies. Originally from Quito, Ecuador, I have participated in technological ventures and research projects before moving to France to pursue my Master’s and PhD studies. Currently, I work at Ampere – Renault Group as a Pilote Fonction Système, where I focus on the validation and optimization of battery state estimators (SOH, SOCE) within the GTR-EVE regulatory framework. My expertise includes data analysis, system calibration, and performance evaluation for electric vehicle batteries, integrating advanced tools like MATLAB, Python, Converto AVL, Power BI, and Excel.
+I have quickly adapted to life in France and am excited to continue contributing to the development of cutting-edge battery technologies. My passion lies in advancing sustainable mobility solutions through technical innovation and strategic thinking.
+Outside of work, I enjoy cycling, cooking, and traveling to explore fascinating new places. I also love diving into DIY projects and technological innovations, constantly seeking new challenges to expand my skills.
 {style="text-align: justify;"}

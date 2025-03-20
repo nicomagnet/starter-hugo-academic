@@ -45,51 +45,128 @@ sections:
     content:
       title: Skills
       items:
-        - name: R
-          description: 90%
-          icon: r-project
-          icon_pack: fab
-        - name: Statistics
-          description: 100%
+        - name: Battery Modeling & Simulation
+          description: Expertise in energy storage modeling, equivalent circuit models, and lifetime estimation.
+          icon: battery-full
+          icon_pack: fas
+        - name: BMS & EMS
+          description: Development and validation of Battery Management Systems (BMS) and Energy Management Systems (EMS).
+          icon: microchip
+          icon_pack: fas
+        - name: System Validation & Data Analysis
+          description: Performance testing, SOH estimation, PVAL analysis, and data-driven optimization.
           icon: chart-line
           icon_pack: fas
-        - name: Photography
-          description: 10%
-          icon: camera-retro
+        - name: Programming & Simulation Tools
+          description: MATLAB, Python, Simulink, Converto AVL, Power BI, Excel, GitHub.
+          icon: code
+          icon_pack: fas
+        - name: Electrical & Electronics Engineering
+          description: Circuit design, sensor integration, CAN analysis, electronic prototyping.
+          icon: plug
+          icon_pack: fas
+        - name: Electrochemistry & Battery Testing
+          description: Experience with Biologic/Arbin battery testing, impedance spectroscopy, and diagnostic techniques.
+          icon: flask
+          icon_pack: fas
+        - name: Cloud & IoT Technologies
+          description: Familiarity with HTTP, MQTT, TCP/IP, and remote monitoring for connected battery systems.
+          icon: cloud
+          icon_pack: fas
+        - name: Project Management & Technical Leadership
+          description: Cross-functional collaboration, supplier coordination, and regulatory compliance (GTR-EVE).
+          icon: tasks
           icon_pack: fas
   - block: experience
     content:
       title: Experience
-      # Date format for experience
-      #   Refer to https://wowchemy.com/docs/customization/#date-format
       date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
+        - title: System Engineer – Energy Storage Systems & Performance
+          company: Segula Technologies (Ampere - Renault Group)
           company_url: ''
-          company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+          company_logo: org-segula
+          location: Paris, France
+          date_start: '2024-01-01'
           date_end: ''
           description: |2-
-              Responsibilities include:
+              - Lead data analysis of PVAL to evaluate and calibrate SOCE estimators for traction battery systems.
+              - Optimize test protocols under WLTP 23°C and -7°C and analyze UBE-certified energy data.
+              - Develop and validate SOH estimation methods applied to current vehicle architectures.
+              - Utilize MATLAB, Python, Converto AVL, Power BI, and Excel for technical analysis.
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
+        - title: Battery Algorithm Development Engineer (Freelance)
+          company: Swiss Energy Storage Company
           company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+          company_logo: org-freelance
+          location: Geneva, Switzerland
+          date_start: '2023-08-01'
+          date_end: '2023-10-01'
+          description: |2-
+              - Developed battery state estimation algorithms (SoC, SoH, SoS) for advanced BMS.
+              - Designed and integrated scalable software architecture for stationary energy storage systems.
+              - Delivered technical reports on BMS implementation and performance optimization.
+
+        - title: R&D Engineer – Li-ion Battery Performance Optimization
+          company: Electrochemistry Laboratory (LEPMI - Grenoble INP)
+          company_url: ''
+          company_logo: org-lepmi
+          location: Grenoble, France
+          date_start: '2019-08-01'
+          date_end: '2023-04-01'
+          description: |2-
+              - Conducted advanced testing on NMC and LFP battery performance and durability.
+              - Developed an equivalent circuit model (ECM) for battery diagnostics and integration into BMS.
+              - Published two scientific papers and contributed to an industrial patent on rapid battery diagnostics.
+
+        - title: Development Engineer – Second-Life Battery Analysis
+          company: Electrochemistry Laboratory (LEPMI - Grenoble INP)
+          company_url: ''
+          company_logo: org-lepmi
+          location: Grenoble, France
+          date_start: '2019-02-01'
+          date_end: '2019-07-01'
+          description: |2-
+              - Characterized degradation mechanisms in second-life Li-ion batteries.
+              - Developed models for equivalent circuit performance and state-of-health prediction.
+              - Conducted over 500 experiments to refine diagnostic protocols.
+
+        - title: R&D Engineer – Energy Management Optimization
+          company: Laboratory of Fluid Mechanics and UAV, Barcelona, Spain
+          company_url: ''
+          company_logo: org-uav
+          location: Barcelona, Spain
+          date_start: '2018-07-01'
+          date_end: '2018-09-01'
+          description: |2-
+              - Analyzed energy consumption in hybrid and standalone fixed-wing drones.
+              - Developed battery selection strategies for aviation applications.
+              - Implemented optimization models for battery endurance in UAVs.
+
+        - title: Engineer – Electrical Analysis for Industrial Projects
+          company: Centrales Villageoises (Collective PV Production), Vercors, France
+          company_url: ''
+          company_logo: org-pv
+          location: Vercors, France
+          date_start: '2018-02-01'
+          date_end: '2018-06-01'
+          description: |2-
+              - Conducted technical and economic analysis for photovoltaic energy projects.
+              - Evaluated energy storage integration and system cost-benefit.
+              - Provided feasibility assessments for rural electrification.
+
+        - title: Instrumentation & Automation Engineer
+          company: Mi Bus UIO (Startup)
+          company_url: ''
+          company_logo: org-mibus
+          location: Quito, Ecuador
+          date_start: '2015-06-01'
+          date_end: '2018-02-01'
+          description: |2-
+              - Developed passenger counting and automated monitoring systems.
+              - Designed and implemented sensor-based data collection.
+              - Reduced annual operational costs by $50,000 through optimization strategies.
+
     design:
       columns: '2'
   - block: accomplishments

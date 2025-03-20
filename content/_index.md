@@ -91,23 +91,14 @@ sections:
           date_end: ''
           description: |2-
               - Current mission: Pilot Function System – GTR-EVE, Ampere (Renault Group)
-
               As part of the GTR-EVE (Global Technical Regulations - Electric Vehicle Durability) requirements, my role at Ampere - Renault Group involves the validation and optimization of battery state estimators (SOH, SOCE) through advanced test analysis and calibration of embedded algorithms in the BMS (Battery Management System).
-
               Electric vehicle performance is significantly affected by battery evolution over its lifecycle. My work focuses on evaluating, calibrating, and validating estimation models, considering regulatory constraints and the specific architectures of different batteries and vehicles.
-
               - Assigned Tasks:
-
               Analysis and validation of BMS estimators: Studying and comparing the performance of SOH and SOCE estimators integrated into the BMS, identifying discrepancies between theoretical models and experimental results to improve estimation accuracy.
-
               Evaluation and calibration through experimental testing: Analyzing battery and vehicle tests to assess real-world energy storage system behavior. Utilizing WLTP cycle tests at 23°C and -7°C to measure system performance under varying climatic and operational conditions.
-
               Development of an advanced SOH estimation methodology: Implementing multiple SOH estimation methods, including empirical, algorithmic, and machine-learning-based approaches, comparing their performances, and selecting the most reliable and vehicle-adapted method.
-
               Optimization and performance reporting: Using MATLAB, Python for model analysis and algorithm development, Converto AVL for test data visualization, and Power BI & Excel for performance tracking.
-
               - Technical Environment:
-
               MATLAB, Python, Converto AVL, Power BI, Excel.    - title: Battery Algorithm Development Engineer (Freelance)
           company: Swiss Energy Storage Company
           company_url: ''

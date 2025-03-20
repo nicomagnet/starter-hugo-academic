@@ -7,8 +7,8 @@ first_name: Nicolas
 last_name: MAGNE TANG 
 
 # Status emoji
-status: Open to offers
-  icon: ☕️
+status: "Open to offers"
+icon: "☕️"
 
 # Is this the primary user of the site?
 superuser: true

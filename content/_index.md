@@ -57,8 +57,8 @@ sections:
       items:
         - title: System Engineer – Energy Storage Systems & Performance
           company: Segula Technologies (Ampere - Renault Group)
-          company_url: ''
-          company_logo: icon_Segula
+          company_url: 'https://www.linkedin.com/company/15633/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BzMmPikLTRHiiS%2FrwKgJYBg%3D%3D'
+          # company_logo: icon_Segula
           location: Paris, France
           date_start: '2024-01-01'
           date_end: ''
@@ -96,8 +96,8 @@ sections:
 
         - title: R&D Engineer – Li-ion Battery Performance Optimization
           company: Electrochemistry Laboratory (LEPMI - Grenoble INP)
-          company_url: ''
-          company_logo: icon_LEPMI
+          company_url: 'https://www.linkedin.com/company/100130918/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BzMmPikLTRHiiS%2FrwKgJYBg%3D%3D'
+          # company_logo: icon_LEPMI
           location: Grenoble, France
           date_start: '2019-08-01'
           date_end: '2023-04-01'
@@ -114,8 +114,8 @@ sections:
 
         - title: Development Engineer – Second-Life Battery Analysis
           company: Electrochemistry Laboratory (LEPMI - Grenoble INP)
-          company_url: ''
-          company_logo: icon_LEPMI
+          company_url: 'https://www.linkedin.com/company/100130918/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BzMmPikLTRHiiS%2FrwKgJYBg%3D%3D'
+          # company_logo: icon_LEPMI
           location: Grenoble, France
           date_start: '2019-02-01'
           date_end: '2019-07-01'
@@ -134,7 +134,7 @@ sections:
         - title: R&D Engineer – Energy Management Optimization
           company: Laboratory of Fluid Mechanics and UAV, Barcelona, Spain
           company_url: ''
-          company_logo: icon_drone
+          # company_logo: icon_drone
           location: Barcelona, Spain
           date_start: '2018-07-01'
           date_end: '2018-09-01'
@@ -152,8 +152,8 @@ sections:
 
         - title: Engineer – Electrical Analysis for Industrial Projects
           company: Centrales Villageoises (Collective PV Production), Vercors, France
-          company_url: ''
-          company_logo: icon_Village
+          company_url: 'https://www.linkedin.com/company/13003931/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_position_details%3BzMmPikLTRHiiS%2FrwKgJYBg%3D%3D'
+          # company_logo: icon_Village
           location: Vercors, France
           date_start: '2018-02-01'
           date_end: '2018-06-01'
@@ -172,7 +172,7 @@ sections:
         - title: Instrumentation & Automation Engineer
           company: Mi Bus UIO (Startup)
           company_url: ''
-          company_logo: icon_mibus
+          # company_logo: icon_mibus
           location: Quito, Ecuador
           date_start: '2015-06-01'
           date_end: '2018-02-01'

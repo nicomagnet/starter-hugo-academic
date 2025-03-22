@@ -9,12 +9,12 @@ en:
   # contentDir: content/en
 
 # Uncomment the lines below to configure your website in a second language.
-fr:
-  languageCode: fr
-  contentDir: content/fr
-es:
-  languageCode: es
-  contentDir: content/es
+# fr:
+#   languageCode: fr
+#   contentDir: content/fr
+# es:
+#   languageCode: es
+#   contentDir: content/es
 #zh:
 #  languageCode: zh-Hans
 #  contentDir: content/zh

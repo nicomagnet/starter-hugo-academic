@@ -22,9 +22,9 @@ main:
   # - name: Talks
   #   url: '#talks'
   #   weight: 40
-  - name: Publications and Patents
-    url: '#featured'
-    weight: 50
+  # - name: Publications and Patents
+  #   url: '#featured'
+  #   weight: 50
   - name: Contact
     url: '#contact'
     weight: 60

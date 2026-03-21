@@ -71,7 +71,7 @@ sections:
               - **Analysis and validation of BMS estimators:** Studying and comparing the **performance of SOH and SOCE estimators** integrated into the **BMS**, identifying discrepancies between theoretical models and experimental results to **improve estimation accuracy**.
               - **Evaluation and calibration through experimental testing:** Analyzing **battery and vehicle tests** to assess **real-world energy storage system behavior**. Utilizing **WLTP cycle tests at 23°C and -7°C** to measure system performance under varying climatic and operational conditions.
               - **Development of an advanced SOH estimation methodology:** Implementing multiple SOH estimation methods, including **empirical, algorithmic, and machine-learning-based approaches**, comparing their performances, and selecting the most **reliable and vehicle-adapted method**.
-              - **Optimization and performance reporting:** Using **MATLAB, Python** for model analysis and algorithm development, **Converto AVL** for test data visualization, and **Power BI & Excel** for performance tracking.
+              - **Optimization and performance reporting:** Using **MATLAB, Python** for model analysis and algorithm development, **Concerto AVL** for test data visualization, and **Power BI & Excel** for performance tracking.
               
               **Technical Environment:**
               - MATLAB, Python, Converto AVL, Power BI, Excel.
@@ -123,8 +123,8 @@ sections:
               **Project Context**: This project focused on battery degradation analysis. My responsibilities included developing rigorous protocols for Li-ion battery characterization, exploring degradation models based on Equivalent Circuit Models (ECM) and State of Health (SOH) parameters, and conducting rigorous laboratory aging tests suitable for electric vehicles (EVs). This collaborative effort, part of a larger initiative led by a student working on his thesis, fostered an interdisciplinary approach.
 
               **Assigned Tasks:**
-              - **Characterization Protocols**: Development of operational protocols to characterize Li-ion batteries for a second life, including methods for measuring electrical parameters. (OCV, CC-CV, EIS, dv/ dq )
-              - **Performance Degradation Model**: Development and use of a simple equivalent circuit-based model to characterize the performance degradation of second-life batteries with phyton and Matlab.
+              - **Characterization Protocols**: Development of operational protocols to characterize Li-ion batteries for a second life, including methods for measuring electrical parameters. (OCV, CC-CV, EIS, dV/dQ )
+              - **Performance Degradation Model**: Development and use of a simple equivalent circuit-based model to characterize the performance degradation of second-life batteries with python and Matlab.
               - **Laboratory Aging Tests**: Conducting extensive laboratory tests to evaluate and characterize the aging of Li-ion batteries under conditions similar to a second life.
               - **Operational Conditions Impact Analysis**: In-depth assessment of the effects of operational conditions on battery performance, particularly in the context of second-life use, and adaptation of the results obtained for a specific application in a Battery Management System (BMS) for second life.
               
@@ -158,7 +158,7 @@ sections:
           date_start: '2018-02-01'
           date_end: '2018-06-01'
           description: |2-
-              **Project Context**:As part of a collaboration between a company and the university, this project involved a technical-economic study for the collective production of photovoltaic (PV) energy in the Vercors community. My responsibilities included estimating the annual production of photovoltaic installations, calculating potential losses within the photovoltaic system, and conducting an in-depth analysis of energy consumption patterns. In addition, I conducted a comprehensive financial analysis to assess the economic viability of the proposed project. Beyond the technical aspects, this experience allowed me to understand the complex workings of the renewable energy sector in France, including the legal considerations related to solar panels. 
+              **Project Context**: As part of a collaboration between a company and the university, this project involved a technical-economic study for the collective production of photovoltaic (PV) energy in the Vercors community. My responsibilities included estimating the annual production of photovoltaic installations, calculating potential losses within the photovoltaic system, and conducting an in-depth analysis of energy consumption patterns. In addition, I conducted a comprehensive financial analysis to assess the economic viability of the proposed project. Beyond the technical aspects, this experience allowed me to understand the complex workings of the renewable energy sector in France, including the legal considerations related to solar panels. 
 
               **Assigned Tasks:**
               - **Assessment of the Potential Production of PV Installations**: Detailed estimation of the expected annual production of PV installations.
@@ -177,7 +177,7 @@ sections:
           date_start: '2015-06-01'
           date_end: '2018-02-01'
           description: |2-
-               **Project Context**: As an electronics engineer for a startup specializing in mobility solutions, I led the development of a comprehensive monitoring system for public transportation, specifically the capital's buses. My work focused on microcontroller programming and development, as well as MQQT communication. The successful implementation of this system not only improved monitoring capabilities but also contributed to significant savings, amounting to up to $50,000 per year per operator. The project aimed to optimize bus operations and stops, systematically improving routes to streamline overall operational expenses and costs. This experience not only showcased my technical expertise but also demonstrated the tangible impact of innovative electronic solutions in optimizing urban mobility and transport efficiency.
+               **Project Context**: As an electronics engineer for a startup specializing in mobility solutions, I led the development of a comprehensive monitoring system for public transportation, specifically the capital's buses. My work focused on microcontroller programming and development, as well as MQTT communication. The successful implementation of this system not only improved monitoring capabilities but also contributed to significant savings, amounting to up to $50,000 per year per operator. The project aimed to optimize bus operations and stops, systematically improving routes to streamline overall operational expenses and costs. This experience not only showcased my technical expertise but also demonstrated the tangible impact of innovative electronic solutions in optimizing urban mobility and transport efficiency.
 
               **Assigned Tasks:**
               - **Understanding Bus Electrical and CAN System**: In-depth analysis of the electrical part of buses and communication with the CAN system to collect data such as speed and other information from sensors.

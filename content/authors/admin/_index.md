@@ -73,7 +73,10 @@ email: 'nicomagnet@gmail.com'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-I am a system engineer specializing in battery performance, modeling, and validation, with a strong background in energy storage systems and innovative technologies. Originally from Quito, Ecuador, I have participated in technological ventures and research projects before moving to France to pursue my Master’s and PhD studies. Currently, I work at Ampere – Renault Group as a Pilote Fonction Système, where I focus on the validation and optimization of battery state estimators (SOH, SOCE) within the GTR-EVE regulatory framework. My expertise includes data analysis, system calibration, and performance evaluation for electric vehicle batteries, integrating advanced tools like MATLAB, Python, Converto AVL, Power BI, and Excel.
-I have quickly adapted to life in France and am excited to continue contributing to the development of cutting-edge battery technologies. My passion lies in advancing sustainable mobility solutions through technical innovation and strategic thinking.
-Outside of work, I enjoy cycling, cooking, and traveling to explore fascinating new places. I also love diving into DIY projects and technological innovations, constantly seeking new challenges to expand my skills.
+"I am a Battery Engineer from Ecuador with a Master’s and a Ph.D. in France. Currently, I work as a Development Engineer at Renault Group, specializing in Energy Management Systems (EMS), Battery Management Systems (BMS) focus on durability analysis for GTR-EVE regulation.
+
+My technical expertise lies in modeling, simulating, and analyzing energy systems. I am proficient in tools like MATLAB/Simulink, Python, and Power BI, which I use to develop algorithms for battery aging analysis (Second-Life Batteries) and optimize energy flows.
+
+Outside of engineering, I am passionate about DIY projects, electronics, cycling, and cooking. I enjoy finding creative solutions to complex problems, both in the lab and in my everyday life.
+
 {style="text-align: justify;"}

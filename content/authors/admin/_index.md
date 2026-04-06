@@ -4,7 +4,7 @@ title: Nicolas MAGNE TANG
 
 # Full name (for SEO)
 first_name: Nicolas
-last_name: MAGNE TANG 
+last_name: MAGNE TANG
 
 # Status emoji
 status: "Open to offers"
@@ -22,13 +22,13 @@ organizations:
     # url: https://www.grenoble-inp.fr
 
 # Short bio (displayed in user profile at end of posts)
-bio: Expert in electrical and electronic systems with a Ph.D. on Modeling and Analysis of Li-ion Batteries and BMS. Optimizing performance and anticipating future behaviors for enhanced battery technology.
+bio: Expert in electrical and electronic systems with a Ph.D. in Modeling and Analysis of Li-ion Batteries and BMS. Optimizing performance and anticipating future behaviors for enhanced battery technology.
 
 # Interests to show in About widget
 interests:
   - Modelling and Simulation
   - EMS and BMS
-  - Electrical and Electronics Design.
+  - Electrical and Electronics Design
 
 # Education to show in About widget
 education:
@@ -36,11 +36,11 @@ education:
     - course: PhD in Energy, Process, and Fluid Mechanics
       institution: University Grenoble Alpes - UGA
       year: 2022
-    - course: Master in Electrical Engineer for Smart Grids and Buildings
-      institution: Graduate School of engineering Energy, Water and Environmental sciences - ENSE3 
+    - course: MSc in Electrical Engineering for Smart Grids and Buildings
+      institution: Graduate School of Engineering - ENSE3
       year: 2019
-    - course: BSc in Electronic, Automatization and Control
-      institution: National Polytechnic School 
+    - course: BSc in Electronics, Automation and Control
+      institution: National Polytechnic School
       year: 2015
 
 # Social/Academic Networking
@@ -73,10 +73,9 @@ email: 'nicomagnet@gmail.com'
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-"I am a Battery Engineer from Ecuador with a Master’s and a Ph.D. in France. Currently, I work as a Development Engineer at Renault Group, specializing in Energy Management Systems (EMS), Battery Management Systems (BMS) focus on durability analysis for GTR-EVE regulation.
+
+I am a Battery Engineer from Ecuador with a Master's and a Ph.D. in France. Currently, I work as a Development Engineer at Renault Group, specializing in Energy Management Systems (EMS) and Battery Management Systems (BMS) with a focus on durability analysis for GTR-EVE regulation.
 
 My technical expertise lies in modeling, simulating, and analyzing energy systems. I am proficient in tools like MATLAB/Simulink, Python, and Power BI, which I use to develop algorithms for battery aging analysis (Second-Life Batteries) and optimize energy flows.
 
 Outside of engineering, I am passionate about DIY projects, electronics, cycling, and cooking. I enjoy finding creative solutions to complex problems, both in the lab and in my everyday life.
-
-{style="text-align: justify;"}

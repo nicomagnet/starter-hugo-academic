@@ -1,28 +1,27 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://wowchemy.com/docs/guide/language/
+# Languages Configuration
+# Documentation: https://wowchemy.com/docs/guide/language/
 
-# Default language
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  # contentDir: content/en
+  languageName: English
+  contentDir: content/en
+  weight: 1
+  title: Portfolio
 
-# Uncomment the lines below to configure your website in a second language.
-# fr:
-#   languageCode: fr
-#   contentDir: content/fr
-# es:
-#   languageCode: es
-#   contentDir: content/es
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+fr:
+  languageCode: fr
+  languageName: Français
+  contentDir: content/fr
+  weight: 2
+  title: Portfolio
+  params:
+    description: Site description in French
+
+es:
+  languageCode: es
+  languageName: Español
+  contentDir: content/es
+  weight: 3
+  title: Portfolio
+  params:
+    description: Descripción del sitio en español

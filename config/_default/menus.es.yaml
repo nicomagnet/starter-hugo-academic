@@ -1,0 +1,28 @@
+main:
+  - name: Inicio
+    url: '#about'
+    weight: 10
+  - name: Habilidades
+    url: '#skills'
+    weight: 15
+  - name: Experiencia
+    url: '#experience'
+    weight: 20
+  - name: Certificaciones
+    url: '#accomplishments'
+    weight: 25
+  - name: Blog
+    url: '#posts'
+    weight: 30
+  - name: Proyectos
+    url: '#projects'
+    weight: 40
+  - name: Publicaciones
+    url: '#publications'
+    weight: 50
+  - name: Contacto
+    url: '#contact'
+    weight: 60
+  - name: CV
+    url: uploads/resume.pdf
+    weight: 70

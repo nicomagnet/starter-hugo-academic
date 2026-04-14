@@ -12,8 +12,9 @@ baseURL: 'https://nicolas.magnetang.com/' # Website URL
 
 defaultContentLanguage: en
 hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
+defaultContentLanguageInSubdir: true
 removePathAccents: true
+enableRobotsTXT: true
 
 ############################
 ## MODULES
@@ -34,7 +35,6 @@ enableGitInfo: false
 summaryLength: 30
 paginate: 10
 enableEmoji: true
-enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:

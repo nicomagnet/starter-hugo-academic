@@ -1,0 +1,20 @@
+# Spanish translations
+# Use: {{ i18n "key" }}
+
+# Navigation
+home: Inicio
+about: Sobre mí
+skills: Habilidades
+experience: Experiencia
+certifications: Certificaciones
+blog: Blog
+projects: Proyectos
+publications: Publicaciones
+contact: Contacto
+cv: CV
+
+# Common
+read_more: Leer más
+view_all: Ver todo
+search: Buscar
+menu: Menú

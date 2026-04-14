@@ -1,0 +1,20 @@
+# French translations
+# Use: {{ i18n "key" }}
+
+# Navigation
+home: Accueil
+about: À propos
+skills: Compétences
+experience: Expérience
+certifications: Certifications
+blog: Blog
+projects: Projets
+publications: Publications
+contact: Contact
+cv: CV
+
+# Common
+read_more: Lire la suite
+view_all: Voir tout
+search: Rechercher
+menu: Menu

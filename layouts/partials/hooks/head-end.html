@@ -1,0 +1,312 @@
+{{/* Custom styles for Spotlight-inspired design */}}
+<style>
+/* ============================================
+   SPOTLIGHT-INSPIRED DESIGN
+   ============================================ */
+
+:root {
+  /* Colors */
+  --primary: #18181b;
+  --accent: #4f46e5;
+  --muted: #71717a;
+  --bg: #ffffff;
+  --bg-soft: #fafafa;
+  --surface: #ffffff;
+  --text: #18181b;
+  --text-muted: #52525b;
+  --border: #e4e4e7;
+  
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08);
+}
+
+/* Dark mode */
+[data-theme="dark"],
+.dark {
+  --primary: #fafafa;
+  --accent: #6366f1;
+  --muted: #71717a;
+  --bg: #09090b;
+  --bg-soft: #18181b;
+  --surface: #18181b;
+  --text: #fafafa;
+  --text-muted: #a1a1aa;
+  --border: #27272a;
+}
+
+/* Base */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255,255,255,0.9) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: none !important;
+}
+[data-theme="dark"] .navbar,
+.dark .navbar {
+  background: rgba(9,9,11,0.9) !important;
+}
+
+.navbar .nav-link {
+  color: var(--text-muted) !important;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.875rem;
+  transition: all 0.2s ease;
+}
+.navbar .nav-link:hover {
+  color: var(--accent) !important;
+  background: rgba(79,70,229,0.05);
+}
+
+/* Sections */
+.home-section {
+  padding: 4rem 0;
+}
+.home-section-bg {
+  display: none;
+}
+
+/* Hero/About */
+#profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#profile .portrait {
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-full);
+  margin: 0 auto 1.5rem;
+}
+#profile .portrait-title h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+#profile .portrait-title h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+#profile .network-icon {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+#profile .network-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--bg-soft);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+#profile .network-icon a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: rgba(79,70,229,0.05);
+}
+
+/* Biography */
+.article-style {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+.section-subheading {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted) !important;
+}
+.ul-interests li, .ul-edu li {
+  color: var(--text-muted);
+}
+
+/* Section titles */
+.section-heading h1,
+.section-heading .mb-0 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+/* Experience cards */
+.experience .card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: none !important;
+  transition: all 0.2s ease;
+}
+.experience .card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md) !important;
+}
+.exp-title {
+  font-weight: 600 !important;
+  color: var(--text) !important;
+}
+.exp-company {
+  color: var(--accent) !important;
+  font-weight: 500 !important;
+}
+.exp-meta {
+  color: var(--muted) !important;
+  font-size: 0.875rem;
+}
+.card-text {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* Project cards */
+.projects-container .card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.projects-container .card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg) !important;
+}
+.projects-container .card-image {
+  height: 160px;
+  overflow: hidden;
+}
+.projects-container .card-body {
+  padding: 1.25rem;
+}
+.projects-container .card-title {
+  font-weight: 600;
+  color: var(--text);
+}
+.projects-container .card-text {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* Contact */
+.wg-contact .form-control {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+}
+.wg-contact .form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(79,70,229,0.1);
+}
+.wg-contact .form-control::placeholder {
+  color: var(--muted);
+}
+.wg-contact .btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  border-radius: var(--radius-full);
+  padding: 0.625rem 1.5rem;
+  font-weight: 500;
+}
+.wg-contact .btn-primary:hover {
+  background: #4338ca;
+  border-color: #4338ca;
+}
+
+/* Buttons */
+.btn {
+  border-radius: var(--radius-full);
+  font-weight: 500;
+}
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.btn-outline {
+  border-color: var(--border);
+  color: var(--text);
+}
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  padding: 2rem 0;
+}
+.powered-by {
+  color: var(--muted);
+  font-size: 0.8125rem;
+}
+.powered-by a {
+  color: var(--text-muted);
+}
+
+/* Feature cards */
+.wg-features .featurette-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: rgba(79,70,229,0.1);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Timeline adjust */
+.text-center.flex-column.d-none.d-sm-flex {
+  padding-top: 1.5rem;
+}
+.badge-pill.border {
+  background: var(--accent);
+  width: 12px;
+  height: 12px;
+}
+.badge-pill.border.exp-fill {
+  background: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-section {
+    padding: 3rem 0;
+  }
+  .section-heading h1,
+  .section-heading .mb-0 {
+    font-size: 1.5rem;
+  }
+}
+</style>

@@ -1,0 +1,682 @@
+/* ============================================
+   PREMIUM DESIGN SYSTEM
+   Custom styles for Hugo Blox Portfolio
+   ============================================ */
+
+// Color Palette - Professional & Modern
+:root {
+  // Primary palette - Deep slate with warm undertones
+  --color-primary: #1a1d23;
+  --color-primary-light: #2d3139;
+  --color-primary-dark: #0f1113;
+  
+  // Accent - Vibrant teal
+  --color-accent: #0d9488;
+  --color-accent-light: #14b8a6;
+  --color-accent-dark: #0f766e;
+  
+  // Secondary accent - Warm amber
+  --color-secondary: #f59e0b;
+  --color-secondary-light: #fbbf24;
+  
+  // Neutrals
+  --color-bg: #fafbfc;
+  --color-bg-alt: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f8fafc;
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-text-light: #94a3b8;
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
+  
+  // Shadows - Soft & layered
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 40px rgba(13, 148, 136, 0.15);
+  
+  // Border radius
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  
+  // Transitions
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+// Dark theme overrides
+[data-theme="dark"],
+.dark {
+  --color-primary: #f1f5f9;
+  --color-primary-light: #e2e8f0;
+  --color-primary-dark: #cbd5e1;
+  --color-bg: #0f1113;
+  --color-bg-alt: #1a1d23;
+  --color-surface: #1a1d23;
+  --color-surface-hover: #252830;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-text-light: #64748b;
+  --color-border: #2d3139;
+  --color-border-light: #252830;
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================
+   HERO SECTION REDESIGN
+   ============================================ */
+
+.hero-landing {
+  padding: 6rem 0 4rem;
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(13, 148, 136, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+  }
+  
+  .hero-subtitle {
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+  
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+    .btn {
+      border-radius: var(--radius-full);
+      padding: 0.875rem 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all var(--transition-base);
+      
+      &.btn-primary {
+        background: var(--color-accent);
+        border: none;
+        box-shadow: var(--shadow-md), var(--shadow-glow);
+        
+        &:hover {
+          background: var(--color-accent-light);
+          transform: translateY(-2px);
+          box-shadow: var(--shadow-lg), var(--shadow-glow);
+        }
+      }
+      
+      &.btn-outline {
+        border: 2px solid var(--color-border);
+        background: transparent;
+        color: var(--color-text);
+        
+        &:hover {
+          border-color: var(--color-accent);
+          color: var(--color-accent);
+          background: rgba(13, 148, 136, 0.05);
+        }
+      }
+    }
+  }
+  
+  // Profile avatar
+  .hero-avatar {
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 2rem;
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
+    border: 4px solid var(--color-surface);
+    transition: all var(--transition-base);
+    
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: var(--shadow-xl), 0 0 60px rgba(13, 148, 136, 0.2);
+    }
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  // Social icons
+  .hero-social {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    
+    a {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius-full);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-muted);
+      transition: all var(--transition-base);
+      
+      &:hover {
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+      }
+    }
+  }
+}
+
+/* ============================================
+   SECTION STYLING
+   ============================================ */
+
+.section {
+  padding: 5rem 0;
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    
+    .section-title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    
+    .section-subtitle {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* ============================================
+   PROJECT CARDS - PREMIUM DESIGN
+   ============================================ */
+
+.portfolio-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-base);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
+    border-color: var(--color-accent);
+  }
+  
+  .card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background: var(--color-bg-alt);
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+    
+    &:hover img {
+      transform: scale(1.05);
+    }
+    
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+    }
+    
+    &:hover .card-overlay {
+      opacity: 1;
+    }
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  
+  .card-description {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+  
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+    
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      background: rgba(13, 148, 136, 0.1);
+      color: var(--color-accent);
+      border: 1px solid rgba(13, 148, 136, 0.2);
+    }
+  }
+  
+  .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border-light);
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+    }
+  }
+}
+
+/* Portfolio showcase view */
+.portfolio-showcase {
+  .portfolio-card {
+    .card-image {
+      height: 240px;
+    }
+    
+    .card-content {
+      padding: 1.75rem;
+    }
+    
+    .card-title {
+      font-size: 1.375rem;
+    }
+    
+    .card-description {
+      font-size: 1rem;
+    }
+  }
+}
+
+/* ============================================
+   SKILLS / FEATURES CARDS
+   ============================================ */
+
+.feature-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  text-align: center;
+  transition: all var(--transition-base);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+  }
+  
+  .feature-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(135deg, rgba(13, 148, 136, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+    color: var(--color-accent);
+    font-size: 1.75rem;
+    
+    .fa-icon,
+    .fas,
+    .far,
+    .fab {
+      width: 1em;
+      height: 1em;
+    }
+  }
+  
+  .feature-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+  
+  .feature-description {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+}
+
+/* ============================================
+   EXPERIENCE TIMELINE
+   ============================================ */
+
+.experience-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  margin-bottom: 1.5rem;
+  transition: all var(--transition-base);
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--color-accent);
+    border-radius: var(--radius-full);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+  }
+  
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-lg);
+    
+    &::before {
+      opacity: 1;
+    }
+  }
+  
+  .experience-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.25rem;
+  }
+  
+  .experience-company {
+    font-size: 1rem;
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience-date {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+    margin-bottom: 1rem;
+  }
+  
+  .experience-description {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    
+    strong {
+      color: var(--color-text);
+    }
+  }
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+
+.contact-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  
+  .contact-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+  }
+}
+
+/* ============================================
+   NAVBAR OVERRIDES
+   ============================================ */
+
+.navbar {
+  background: rgba(250, 251, 252, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  
+  .navbar-brand {
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  
+  .nav-link {
+    color: var(--color-text-muted);
+    font-weight: 500;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-fast);
+    
+    &:hover {
+      color: var(--color-accent);
+      background: rgba(13, 148, 136, 0.05);
+    }
+  }
+}
+
+// Dark navbar
+[data-theme="dark"] .navbar,
+.dark .navbar {
+  background: rgba(15, 17, 19, 0.85);
+}
+
+/* ============================================
+   PUBLICATION / POST CARDS
+   ============================================ */
+
+.collection-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all var(--transition-base);
+  
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .item-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.5rem;
+  }
+  
+  .item-meta {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+  }
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+
+.btn {
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  transition: all var(--transition-base);
+  
+  &.btn-primary {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    
+    &:hover {
+      background: var(--color-accent-light);
+      border-color: var(--color-accent-light);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+  }
+  
+  &.btn-outline {
+    border-color: var(--color-border);
+    color: var(--color-text);
+    
+    &:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      background: rgba(13, 148, 136, 0.05);
+    }
+  }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+// Fade in up animation
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Stagger children
+.stagger-animation {
+  > * {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    
+    @for $i from 1 through 12 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.1}s;
+      }
+    }
+  }
+}
+
+// Hover lift effect
+.hover-lift {
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+  }
+}
+
+/* ============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 768px) {
+  .hero-landing {
+    padding: 4rem 0 3rem;
+    
+    .hero-avatar {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .hero-title {
+      font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .portfolio-card {
+    .card-image {
+      height: 180px;
+    }
+  }
+}

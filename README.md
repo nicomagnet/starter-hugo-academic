@@ -25,13 +25,34 @@ System Engineer – Energy Storage Systems & Performance at **Segula Technologie
 ## Repository Structure
 
 ```
-├── content/                  # Portfolio content (experience, publications, projects, blog)
-├── config/_default/          # Hugo configuration
-├── docs/                     # Documentation
-│   ├── HUGO_USAGE.md         # Template usage guide
-│   └── DEPLOY.md             # Deployment guide
-└── static/uploads/           # Static files (CV)
+starter-hugo-academic/
+├── config/_default/    # Hugo config (YAML)
+│   ├── config.yaml    # Main config
+│   ├── params.yaml    # Theme params
+│   ├── languages.yaml # Multilingual config
+│   └── menus.*.yaml   # Navigation menus
+├── content/           # Site content (multilingual)
+│   ├── en/           # English (default)
+│   ├── fr/           # French
+│   └── es/           # Spanish
+│       ├── _index.md  # Homepage
+│       ├── authors/   # Author profiles
+│       ├── project/   # Projects
+│       ├── post/     # Blog posts
+│       └── publication/ # Publications
+├── data/             # Theme data
+├── layouts/          # Custom layouts
+├── static/           # Static assets
+│   └── uploads/     # PDFs, resume
+└── public/          # Built site (gitignored)
 ```
+
+## Multilingual Support
+
+The site supports 3 languages:
+- **English** (`en`) - Default, at `/` and `/en/`
+- **French** (`fr`) - At `/fr/`
+- **Spanish** (`es`) - At `/es/`
 
 ## Quick Links
 
@@ -42,7 +63,7 @@ System Engineer – Energy Storage Systems & Performance at **Segula Technologie
 
 ## Built With
 
-- [Hugo](https://gohugo.io/) — Static site generator
+- [Hugo](https://gohugo.io/) — Static site generator (v0.111.3)
 - [Wowchemy](https://wowchemy.com/) — Hugo academic theme
 - [Netlify](https://www.netlify.com/) — Hosting and deployment
 
@@ -60,4 +81,4 @@ See [docs/HUGO_USAGE.md](docs/HUGO_USAGE.md) for detailed instructions.
 
 ## License
 
-This template is based on the [Wowchemy Hugo Academic Theme](https://github.com/wowchemy/starter-hugo-academic) and is customized for personal portfolio use.
+This template is based on the [Wowchemy Hugo Academic Theme](https://github.com/wowchemy/starter-hugo-academic) and is customized for personal portfolio use. CC BY-NC-ND 4.0

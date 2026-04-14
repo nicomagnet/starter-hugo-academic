@@ -1,122 +1,93 @@
 # AGENT GUIDELINES
 
-This document outlines the conventions, commands, and style guidelines for agentic coding agents operating within this repository. Adhering to these guidelines ensures consistency, maintainability, and efficient collaboration.
+This document outlines the conventions, commands, and style guidelines for agentic coding agents operating within this repository.
 
-## 1. Build, Lint, and Test Commands
+## 1. Build Commands
 
-This project is a Hugo Academic site utilizing Wowchemy themes, with underlying Go modules.
+This is a Hugo Academic (Wowchemy) site with multilingual support.
 
 ### Hugo Commands
 
-*   **Build Site (Development):**
+*   **Build Site:**
     ```bash
     hugo
     ```
-    _Description: Compiles the Hugo site for development._
+    Compiles the Hugo site for development.
 
-*   **Build Site (Production, Minified):**
+*   **Build Production:**
     ```bash
     hugo --gc --minify
     ```
-    _Description: Compiles, garbage collects unused resources, and minifies for production. This matches the Netlify build command._
+    Compiles, garbage collects, and minifies for production (Netlify command).
 
-*   **Serve Site (Local Development Server):**
+*   **Serve Locally:**
     ```bash
     hugo server
     ```
-    _Description: Starts a local development server with live reloading. Add `--disableFastRender` if you encounter rendering issues._
+    Starts local dev server with live reloading. Add `--disableFastRender` if needed.
 
-*   **Build Future-Dated Content:**
-    ```bash
-    hugo --buildFuture
-    ```
-    _Description: Includes content with future `date` front matter (used for deploy previews on Netlify)._
-
-### Go Commands
-
-The project uses Go modules for Wowchemy theme integration (`go.mod`). If custom Go code is added:
-
-*   **Run All Go Tests:**
-    ```bash
-    go test ./...
-    ```
-
-*   **Run a Single Go Test:**
-    ```bash
-    go test -run TestName ./path/to/package
-    ```
-    _Replace `TestName` with the exact test function name and `./path/to/package` with the target package._
-
-*   **Format Go Code:**
-    ```bash
-    go fmt ./...
-    ```
-
-*   **Vet Go Code:**
-    ```bash
-    go vet ./...
-    ```
-
-## 2. Code Style Guidelines
-
-### General EditorConfig Settings
-
-The `.editorconfig` file enforces:
-
-*   **Character Set:** `utf-8`
-*   **End of Line:** `lf`
-*   **Indent Size:** `2` spaces
-*   **Indent Style:** `space`
-*   **Insert Final Newline:** `true`
-*   **Trim Trailing Whitespace:** `true`
-
-### File-Specific Rules
-
-| File Type | Rule |
-|-----------|------|
-| `*.toml` | Max line length: `100` |
-| `*.md` | Do NOT trim trailing whitespace |
-| `layouts/shortcodes/*.html` | Do NOT insert final newline |
-
-### YAML Front Matter (`config/_default/*.yaml`, content `index.md`)
-
-*   Use YAML for Hugo configuration (`config/_default/config.yaml`, `params.yaml`, `menus.yaml`, `languages.yaml`).
-*   Use `_merge: deep` to inherit Wowchemy module defaults.
-*   Front matter in content files uses YAML format with `---` delimiters.
-*   Standard front matter fields: `title`, `summary`, `date`, `publishDate`, `authors`, `tags`, `categories`.
-
-### Markdown Content (`content/**/*.md`)
-
-*   Use plain text Markdown with support for LaTeX math, diagrams, and code blocks.
-*   RMarkdown (`.Rmd`) and Jupyter (`.ipynb`) files are ignored per `ignoreFiles` config.
-*   Trailing whitespace is preserved (per EditorConfig).
-
-### Go-Specific Style
-
-*   **Formatting:** Always run `go fmt` on Go source files.
-*   **Naming:** `CamelCase` for exported, `camelCase` for unexported. Clear, concise names.
-*   **Imports:** Group standard library separately from third-party. Use `goimports`.
-*   **Types:** Use structs for complex data, interfaces for behavior.
-*   **Error Handling:** Check errors explicitly, propagate with context, return as last value.
-
-## 3. Project Structure
+## 2. Project Structure
 
 ```
-config/_default/    # Hugo configuration (YAML)
-content/            # Site content (Markdown, organized by section)
-data/               # Data files (e.g., page_sharer.toml)
-layouts/            # Custom Hugo layouts and shortcodes
-static/             # Static assets (images, CSS, JS)
-assets/             # Processed assets (SCSS, JS pipelines)
+starter-hugo-academic/
+├── config/_default/    # Hugo config (YAML)
+│   ├── config.yaml
+│   ├── params.yaml
+│   ├── languages.yaml
+│   └── menus.*.yaml
+├── content/           # Site content (multilingual)
+│   ├── en/           # English (default)
+│   ├── fr/           # French
+│   └── es/           # Spanish
+│       ├── _index.md  # Homepage
+│       ├── authors/   # Author profiles
+│       ├── project/   # Projects
+│       ├── post/     # Blog posts
+│       └── publication/ # Publications
+├── data/             # Theme data
+├── layouts/          # Custom layouts
+├── static/           # Static assets
+│   └── uploads/     # PDFs, resume
+└── public/          # Built site (gitignored)
 ```
 
-## 4. Deployment (Netlify)
+## 3. Multilingual Setup
 
-*   **Build Command:** `hugo --gc --minify -b $URL`
-*   **Publish Directory:** `public`
-*   **Hugo Version:** `0.111.3` (set in `netlify.toml`)
-*   Deploy previews build future-dated content automatically.
+### Languages
+- **English** (`en`) - Default, at `/` and `/en/`
+- **French** (`fr`) - At `/fr/`
+- **Spanish** (`es`) - At `/es/`
 
-## 5. Cursor/Copilot Rules
+Configured in `config/_default/languages.yaml`.
 
-No specific Cursor (`.cursor/rules/`, `.cursorrules`) or Copilot (`.github/copilot-instructions.md`) rules exist. Default to these guidelines and general best practices.
+### Content Organization
+Each language has its own directory under `content/`.
+
+## 4. Content Editing
+
+### Homepage
+Edit `content/en/_index.md` to modify sections.
+
+### Author Profile
+Edit `content/en/authors/admin/_index.md`:
+- `title`: Display name
+- `role`: Job title
+- `bio`: Short bio
+- `interests`: List of interests
+- `education`: Education history
+- `social`: Social links (LinkedIn, GitHub, etc.)
+
+### Projects
+Add files to `content/en/project/` with YAML front matter.
+
+## 5. Deployment (Netlify)
+
+*   **Build:** `hugo --gc --minify -b $URL`
+*   **Publish:** `public`
+*   **Hugo Version:** `0.111.3` (in `netlify.toml`)
+
+## 6. Code Style
+
+*   **Indent:** 2 spaces
+*   **YAML:** Use `_merge: deep` for theme inheritance
+*   **Markdown:** Standard with `---` front matter delimiters

@@ -1,8 +1,269 @@
 ---
-# Homepage for English version
-title: Home
-cascade:
-  _build:
-    list: always
-    render: true
+# Leave the homepage title empty to use the site title
+title:
+date: 2025-03-22
+type: landing
+
+sections:
+
+  - block: about.biography
+    id: about
+    content:
+      title: Biography
+      username: admin
+
+  - block: features
+    id: skills
+    content:
+      title: Skills
+      items:
+        - name: Battery Modeling & Simulation
+          description: Expertise in energy storage modeling, equivalent circuit models, and lifetime estimation.
+          icon: battery-full
+          icon_pack: fas
+        - name: BMS & EMS
+          description: Development and validation of Battery Management Systems (BMS) and Energy Management Systems (EMS).
+          icon: microchip
+          icon_pack: fas
+        - name: System Validation & Data Analysis
+          description: Performance testing, SOH estimation, PVAL analysis, and data-driven optimization.
+          icon: chart-line
+          icon_pack: fas
+        - name: Programming & Simulation Tools
+          description: MATLAB, Python, Simulink, Converto AVL, Power BI, Excel, GitHub.
+          icon: code
+          icon_pack: fas
+        - name: Electrical & Electronics Engineering
+          description: Circuit design, sensor integration, CAN analysis, electronic prototyping.
+          icon: plug
+          icon_pack: fas
+        - name: Electrochemistry & Battery Testing
+          description: Experience with Biologic/Arbin battery testing, impedance spectroscopy, and diagnostic techniques.
+          icon: flask
+          icon_pack: fas
+        - name: Cloud & IoT Technologies
+          description: Familiarity with HTTP, MQTT, TCP/IP, and remote monitoring for connected battery systems.
+          icon: cloud
+          icon_pack: fas
+        - name: Project Management & Technical Leadership
+          description: Cross-functional collaboration, supplier coordination, and regulatory compliance (GTR-EVE).
+          icon: tasks
+          icon_pack: fas
+
+  - block: experience
+    id: experience
+    content:
+      title: Experience
+      date_format: Jan 2006
+      items:
+        - title: System Engineer – Energy Storage Systems & Performance
+          company: Segula Technologies (Ampere - Renault Group)
+          company_url: 'https://www.linkedin.com/company/15633/'
+          location: Paris, France
+          date_start: '2024-01-01'
+          date_end: ''
+          description: |2-
+              **Current mission:** Pilot Function System – GTR-EVE, Ampere (Renault Group)
+              - As part of the **GTR-EVE (Global Technical Regulations - Electric Vehicle Durability)** requirements, my role at **Ampere - Renault Group** involves the **validation and optimization of battery state estimators (SOH, SOCE)** through **advanced test analysis and calibration of embedded algorithms in the BMS (Battery Management System).**
+              - **Electric vehicle performance** is significantly affected by battery evolution over its lifecycle. My work focuses on **evaluating, calibrating, and validating estimation models**, considering regulatory constraints and the specific architectures of different batteries and vehicles.
+
+              **Assigned Tasks:**
+              - **Analysis and validation of BMS estimators:** Studying and comparing the **performance of SOH and SOCE estimators** integrated into the **BMS**, identifying discrepancies between theoretical models and experimental results to **improve estimation accuracy**.
+              - **Evaluation and calibration through experimental testing:** Analyzing **battery and vehicle tests** to assess **real-world energy storage system behavior**. Utilizing **WLTP cycle tests at 23°C and -7°C** to measure system performance under varying climatic and operational conditions.
+              - **Development of an advanced SOH estimation methodology:** Implementing multiple SOH estimation methods, including **empirical, algorithmic, and machine-learning-based approaches**, comparing their performances, and selecting the most **reliable and vehicle-adapted method**.
+              - **Optimization and performance reporting:** Using **MATLAB, Python** for model analysis and algorithm development, **Concerto AVL** for test data visualization, and **Power BI & Excel** for performance tracking.
+
+              **Technical Environment:**
+              - MATLAB, Python, Converto AVL, Power BI, Excel.
+
+        - title: Battery Algorithm Development Engineer
+          company: Freelancer - Swiss Company
+          company_url: ''
+          location: Geneva, Switzerland
+          date_start: '2023-08-01'
+          date_end: '2023-10-01'
+          description: |2-
+              **Project Context:** The company, specializing in **stationary energy storage**, required expertise in advanced battery management system (BMS) technology. This role involved designing and implementing a robust software architecture, including integrating **advanced battery state estimation algorithms (SoC, SoH, SoS, etc.)**. The focus was on optimizing the BMS to enhance battery performance, safety, and system efficiency.
+
+              **Assigned Tasks:**
+              - **Software architecture design for BMS**: Defining system structure and organization with scalability, modularity, and hardware integration in mind.
+              - **Integration of battery state estimators**: Implementing sensor data algorithms to estimate State of Charge (SoC), State of Health (SoH), and State of Safety (SoS).
+              - **Technical reports**: Producing two detailed reports documenting BMS software architecture design, algorithm selection, and integration strategies.
+
+              **Technical Environment:**
+              - Battery databases, Python programming, GitHub, Teams.
+
+        - title: R&D Engineer – Li-ion Battery Performance Optimization
+          company: Electrochemistry Laboratory (LEPMI - Grenoble INP)
+          company_url: 'https://www.linkedin.com/company/100130918/'
+          location: Grenoble, France
+          date_start: '2019-08-01'
+          date_end: '2023-04-01'
+          description: |2-
+              **Project Context:** This research project focused on optimizing lithium-iron-phosphate (LFP) and nickel-manganese-cobalt (NMC) battery performance, especially under high-current discharge scenarios, using ohmic drop compensation methods. The research involved collaboration with industrial partners (e-bike and drone manufacturers) and resulted in scientific publications and an industrial patent.
+
+              **Assigned Tasks:**
+              - **Testing protocols and campaigns:** Defined and executed cycling, impedance spectroscopy (EIS), and differential capacity analysis (dq/dv) tests on NMC and LFP batteries, integrating the ohmic drop compensation (ODC) method.
+              - **Aging analysis and performance improvement**: Evaluated battery aging under high-discharge conditions, implementing a fast-protocol ODC method that improved capacity by 20%.
+              - **Development of parametric models**: Designed and implemented an equivalent circuit model (ECM) incorporating ODC effects for BMS integration in small-scale applications (drones, e-bikes).
+
+              **Technical Environment:**
+              - Oscilloscope, Potentiostat (battery tests) Biologic/Arbin, Soldering Station, MATLAB, Simulink, EC-Lab, GitHub, MS Office, Programming (C, Python)
+
+        - title: Development Engineer – Second-Life Battery Analysis
+          company: Electrochemistry Laboratory (LEPMI - Grenoble INP)
+          company_url: 'https://www.linkedin.com/company/100130918/'
+          location: Grenoble, France
+          date_start: '2019-02-01'
+          date_end: '2019-07-01'
+          description: |2-
+              **Project Context**: This project focused on battery degradation analysis. My responsibilities included developing rigorous protocols for Li-ion battery characterization, exploring degradation models based on Equivalent Circuit Models (ECM) and State of Health (SOH) parameters, and conducting rigorous laboratory aging tests suitable for electric vehicles (EVs). This collaborative effort, part of a larger initiative led by a student working on his thesis, fostered an interdisciplinary approach.
+
+              **Assigned Tasks:**
+              - **Characterization Protocols**: Development of operational protocols to characterize Li-ion batteries for a second life, including methods for measuring electrical parameters. (OCV, CC-CV, EIS, dV/dQ )
+              - **Performance Degradation Model**: Development and use of a simple equivalent circuit-based model to characterize the performance degradation of second-life batteries with python and Matlab.
+              - **Laboratory Aging Tests**: Conducting extensive laboratory tests to evaluate and characterize the aging of Li-ion batteries under conditions similar to a second life.
+              - **Operational Conditions Impact Analysis**: In-depth assessment of the effects of operational conditions on battery performance, particularly in the context of second-life use, and adaptation of the results obtained for a specific application in a Battery Management System (BMS) for second life.
+
+              **Technical Environment:**
+              - Potentiostat (test batteries) Biologic, EC-lab, GitHub, MS Office, Programming (python)
+
+        - title: R&D Engineer – Energy Management Optimization
+          company: Laboratory of Fluid Mechanics and UAV, Barcelona, Spain
+          company_url: ''
+          location: Barcelona, Spain
+          date_start: '2018-07-01'
+          date_end: '2018-09-01'
+          description: |2-
+              **Project Context**: As part of the development of a high-altitude UAV, I focused on the multiple facets of UAV energy consumption and efficiency. Tasked with analyzing the energy consumption of fixed-wing UAVs, including simple and hybrid systems integrating electrical components and turbines, my role extended to simulating fixed-wing UAV energy systems. This hybrid configuration involved a careful balance between electrical components (motor, controller, battery) and a gasoline turbine to achieve the required speed and oriented support. My analytical role also included the critical task of analyzing and sizing the storage system, taking into account factors such as range and weight. In particular, I contributed to the overall project approach through the use of Model-Based Systems Engineering (MBSE), which enabled a comprehensive understanding of the complex UAV system dynamics.
+
+              **Assigned Tasks:**
+              - **In-Depth Energy Consumption Analysis**: Detailed study of fixed-wing drone energy consumption and efficiency, considering battery technologies, as well as drone propulsion systems.
+              - **Energy System Modeling and Simulation**: Modeling and simulation of the fixed-wing drone energy system, using tools such as Simulink and MBSE for a complete analysis of the drone.
+              - **Drone Energy Performance Simulation**: Ability to simulate and evaluate fixed-wing drone energy performance, considering both simple and hybrid systems for a comprehensive assessment.
+              - **Storage System Analysis and Sizing**: Including detailed analysis and sizing of the storage system to achieve the optimal balance between power consumption and weight, to ensure better flight autonomy. (Python)
+
+              **Technical Environment:**
+              - GitHub, MS Office, Programming (python), LabVIEW, Simulink, Matlab
+
+        - title: Engineer – Electrical Analysis for Industrial Projects
+          company: Centrales Villageoises (Collective PV Production), Vercors, France
+          company_url: 'https://www.linkedin.com/company/13003931/'
+          location: Vercors, France
+          date_start: '2018-02-01'
+          date_end: '2018-06-01'
+          description: |2-
+              **Project Context**: As part of a collaboration between a company and the university, this project involved a technical-economic study for the collective production of photovoltaic (PV) energy in the Vercors community. My responsibilities included estimating the annual production of photovoltaic installations, calculating potential losses within the photovoltaic system, and conducting an in-depth analysis of energy consumption patterns. In addition, I conducted a comprehensive financial analysis to assess the economic viability of the proposed project. Beyond the technical aspects, this experience allowed me to understand the complex workings of the renewable energy sector in France, including the legal considerations related to solar panels.
+
+              **Assigned Tasks:**
+              - **Assessment of the Potential Production of PV Installations**: Detailed estimation of the expected annual production of PV installations.
+              - **Analysis of Energy Consumption Patterns**: Detailed study of energy consumption patterns within the Vercors region, allowing the feasibility of the collective production model to be assessed. (Python)
+              - **Financial Analysis of Project Viability**: Detailed assessment of the financial aspect to determine the viability of the project. (French Law)
+              - **Collaboration and Relevance of the Study**: Collaborative work with a multidisciplinary team to ensure the accuracy and relevance of the study conducted. (Project €175,000)
+
+              **Technical Environment:**
+              - GitHub, MS Office, Matlab
+
+        - title: Instrumentation & Automation Engineer
+          company: Mi Bus UIO (Startup)
+          company_url: ''
+          location: Quito, Ecuador
+          date_start: '2015-06-01'
+          date_end: '2018-02-01'
+          description: |2-
+               **Project Context**: As an electronics engineer for a startup specializing in mobility solutions, I led the development of a comprehensive monitoring system for public transportation, specifically the capital's buses. My work focused on microcontroller programming and development, as well as MQTT communication. The successful implementation of this system not only improved monitoring capabilities but also contributed to significant savings, amounting to up to $50,000 per year per operator. The project aimed to optimize bus operations and stops, systematically improving routes to streamline overall operational expenses and costs. This experience not only showcased my technical expertise but also demonstrated the tangible impact of innovative electronic solutions in optimizing urban mobility and transport efficiency.
+
+              **Assigned Tasks:**
+              - **Understanding Bus Electrical and CAN System**: In-depth analysis of the electrical part of buses and communication with the CAN system to collect data such as speed and other information from sensors.
+              - **Integration of Monitoring Elements**: Implementation of monitoring elements for GPS tracking and passenger counting, resulting in a database for each bus.
+              - **Prototype Development**: Creation of a prototype monitoring device, installed and tested on 25 buses to analyze performance, optimize routes and improve schedules.
+              - **Model-Based Engineering**: Using the model-based engineering approach to consider each module, from communication to cloud connection and model-based system and applying Failure Modes and Effects Analysis to optimize each element of the system, ensuring its reliability and performance.
+
+              **Technical Environment:**
+              - Oscilloscope, Soldering Station, GitHub, MS Office, Programming (C, python), CAN analyzer
+    design:
+      columns: '2'
+
+  - block: accomplishments
+    id: accomplishments
+    content:
+      title: 'Certifications & Courses'
+      subtitle: ''
+      date_format: Jan 2006
+      items: []
+    design:
+      columns: '2'
+
+  - block: collection
+    id: posts
+    content:
+      title: Recent Posts
+      subtitle: ''
+      text: ''
+      count: 5
+      filters:
+        folders:
+          - en/post
+      offset: 0
+      order: desc
+    design:
+      view: compact
+      columns: '2'
+
+  - block: portfolio
+    id: projects
+    content:
+      title: Projects
+      filters:
+        folders:
+          - en/project
+      default_button_index: 0
+      buttons:
+        - name: All
+          tag: '*'
+    design:
+      columns: '1'
+      view: showcase
+      flip_alt_rows: false
+
+  - block: collection
+    id: publications
+    content:
+      title: Publications
+      text: |-
+        {{% callout note %}}
+        Quickly discover relevant content by [filtering publications](./publication/).
+        {{% /callout %}}
+      filters:
+        folders:
+          - en/publication
+        exclude_featured: true
+    design:
+      columns: '2'
+      view: citation
+
+  - block: contact
+    id: contact
+    content:
+      title: Contact
+      subtitle:
+      text: |-
+          **Get in touch:** Feel free to reach out to me for any inquiries or collaborations
+      address:
+        city: Paris
+        region: Ile de France
+        country: France
+        country_code: FR
+      contact_links:
+        - icon: twitter
+          icon_pack: fab
+          name: DM Me
+          link: 'https://twitter.com/nicomagnet'
+      autolink: false
+      form:
+        provider: netlify
+        netlify:
+          captcha: false
+    design:
+      columns: '2'
 ---

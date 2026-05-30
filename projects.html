@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" data-default-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-lang="en">Projects — Nicolas MAGNE TANG</title>
+<title data-lang="fr">Projets — Nicolas MAGNE TANG</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title data-lang="es">Proyectos — Nicolas MAGNE TANG</title>
+<meta name="description" content="Technical projects by Nicolas MAGNE TANG — battery modeling, BMS, transportation monitoring, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"><script>if(localStorage.getItem("portfolio-dark")==="true")document.documentElement.setAttribute("data-theme","dark")</script>
+<style>
+:root{--accent:#0d9488;--text:#18181b;--text-muted:#525252;--text-light:#a3a3a3;--bg:#fafaf9;--bg-alt:#f5f5f4;--surface:#ffffff;--border:#e5e4e2;--border-light:#f0efed;--font-sans:'Inter',system-ui,-apple-system,sans-serif;--font-serif:'Source Serif 4',Georgia,'Times New Roman',serif;--radius-lg:14px;--radius-md:10px;--shadow-md:0 4px 6px -1px rgba(0,0,0,.05);--shadow-lg:0 10px 15px -3px rgba(0,0,0,.06)}[data-theme="dark"]{--accent:#14b8a6;--accent-dark:#0d9488;--text:#fafaf9;--text-muted:#a3a3a3;--text-light:#737373;--bg:#0a0a0a;--bg-alt:#171717;--surface:#171717;--border:#262626;--border-light:#1f1f1f;--shadow-lg:0 10px 15px -3px rgba(0,0,0,.5)}[data-theme="dark"] .page-nav{background:rgba(10,10,10,.85)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.7}
+.container{max-width:860px;margin:0 auto;padding:0 24px}
+.page-nav{display:flex;justify-content:center;gap:2rem;padding:1rem 0;border-bottom:1px solid var(--border);background:rgba(250,250,249,.85);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100}
+.page-nav a{font-size:.85rem;font-weight:500;color:var(--text-muted);text-decoration:none;transition:color .2s}
+.page-nav a:hover{color:var(--accent)}
+.page-header{padding:3rem 0 2rem;text-align:center}
+.page-header h1{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.03em;margin-bottom:.35rem}
+.page-header p{font-family:var(--font-serif);font-size:1rem;color:var(--text-muted)}
+.proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;padding-bottom:3rem}
+.proj-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;transition:all .25s}
+.proj-card:hover{border-color:var(--accent);box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+.proj-tag{font-size:.65rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:.4rem}
+.proj-card h3{font-size:.95rem;font-weight:600;margin-bottom:.35rem}
+.proj-card p{font-family:var(--font-serif);font-size:.85rem;color:var(--text-muted);line-height:1.65;margin-bottom:.5rem}
+.proj-links a{font-size:.8rem;color:var(--accent);text-decoration:none;font-weight:500}
+.proj-links a:hover{text-decoration:underline}
+.footer{padding:2rem 0;text-align:center;border-top:1px solid var(--border)}
+.footer p{font-size:.8rem;color:var(--text-light)}
+.footer a{color:var(--accent);text-decoration:none}
+[data-lang]{display:none}[data-lang].active{display:block}span[data-lang].active{display:inline}.dark-toggle{background:none;border:none;cursor:pointer;font-size:1.1rem;padding:2px 4px;line-height:1;transition:transform.2s}
+.dark-toggle:hover{transform:scale(1.15)}
+.lang-select{font-size:.8rem;padding:.25rem .5rem;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text);cursor:pointer;font-family:var(--font-sans)}
+@media(max-width:768px){.proj-grid{grid-template-columns:1fr}.page-nav{gap:.8rem;flex-wrap:wrap}}
+@media print{@page{margin:.5in}body{font-size:9pt;color:#000}.page-nav{display:none}.proj-card{padding:.5rem}}
+</style>
+</head>
+<body>
+<nav class="page-nav">
+  <a href="index.html" data-lang="en">Home</a><a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="es">Inicio</a>
+  <a href="experience.html" data-lang="en">Experience</a><a href="experience.html" data-lang="fr">Expérience</a><a href="experience.html" data-lang="es">Experiencia</a>
+  <a href="publications.html" data-lang="en">Publications</a><a href="publications.html" data-lang="fr">Publications</a><a href="publications.html" data-lang="es">Publicaciones</a>
+  <a href="projects.html" data-lang="en">Projects</a><a href="projects.html" data-lang="fr">Projets</a><a href="projects.html" data-lang="es">Proyectos</a>
+  <a href="interests.html" data-lang="en">Interests</a><a href="interests.html" data-lang="fr">Intérêts</a><a href="interests.html" data-lang="es">Intereses</a>
+  <select class="lang-select" id="lang-switch"><option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option></select><button id="dark-toggle" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+</nav>
+<header class="page-header"><div class="container"><h1 data-lang="en">Projects</h1><h1 data-lang="fr">Projets</h1><h1 data-lang="es">Proyectos</h1><p data-lang="en">Technical work and engineering projects</p><p data-lang="fr">Travaux techniques et projets d'ingénierie</p><p data-lang="es">Trabajos técnicos y proyectos de ingeniería</p></div></header>
+<section class="container">
+<div class="proj-grid">
+
+<div class="proj-card">
+  <div class="proj-tag">Battery Modeling</div>
+  <h3>Ohmic Drop Compensation Model</h3>
+  <p>Developed a novel mathematical model combining classical electrical approach with discharge curve shape analysis for Li-ion batteries. Validated across 4 NMC 18650 cell types at high discharge rates.</p>
+  <div class="proj-links"><span style="font-size:.8rem;color:var(--text-light)">MATLAB · Simulink</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-tag">BMS</div>
+  <h3>Advanced SOH Estimation Methodology</h3>
+  <p>Implementing multiple SOH estimation methods — empirical, algorithmic, and ML-based approaches — comparing performances for GTR-EVE regulatory compliance at Renault Group.</p>
+  <div class="proj-links"><span style="font-size:.8rem;color:var(--text-light)">Python · MATLAB · AVL Concerto</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-tag">Smart Transportation</div>
+  <h3>Bus Monitoring System — Mi Bus UIO</h3>
+  <p>Led hardware development for a real-time people-counting and GPS tracking system for 120 public buses in Quito, Ecuador. Reduced operational costs by $50K/year per operator.</p>
+  <div class="proj-links"><span style="font-size:.8rem;color:var(--text-light)">C · MQTT · CAN · GPS</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-tag">UAV Energy</div>
+  <h3>Hylectric UAV Energy Simulation</h3>
+  <p>Energy consumption modeling for hybrid fixed-wing UAV with electric + gasoline turbine propulsion. Storage system sizing and performance simulation using MBSE methodology.</p>
+  <div class="proj-links"><span style="font-size:.8rem;color:var(--text-light)">Simulink · MATLAB · Python · MBSE</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-tag">Renewable Energy</div>
+  <h3>Collective PV Production Study</h3>
+  <p>Technical-economic feasibility study for community photovoltaic energy production in Vercors, France. PV production estimation, energy consumption analysis, and financial viability assessment (€175K project).</p>
+  <div class="proj-links"><span style="font-size:.8rem;color:var(--text-light)">Python · MATLAB · PV Analysis</span></div>
+</div>
+
+<div class="proj-card">
+  <div class="proj-tag">LaTeX</div>
+  <h3>UGA Thesis Template</h3>
+  <p>Created a comprehensive LaTeX template for University Grenoble Alpes dissertations, cutting setup time for PhD candidates. Used by multiple students.</p>
+  <div class="proj-links"><a href="https://github.com/nicomagnet/template_UGA_manuscrit_ENG" target="_blank">GitHub →</a></div>
+</div>
+
+</div>
+</section>
+<footer class="footer"><div class="container"><p>© 2026 Nicolas MAGNE TANG — <a href="index.html" data-lang="en">Back to Home</a><a href="index.html" data-lang="fr">Retour à l'accueil</a><a href="index.html" data-lang="es">Volver al Inicio</a></p></div></footer>
+
+<script src="lang.js"></script>
+</body>
+</html>

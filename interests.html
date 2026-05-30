@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-default-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-lang="en">Interests &amp; More — Nicolas MAGNE TANG</title>
+<title data-lang="fr">Centres d'intérêt — Nicolas MAGNE TANG</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title data-lang="es">Intereses — Nicolas MAGNE TANG</title>
+<meta name="description" content="Non-technical experience, social activities, certifications, interests, and hobbies of Nicolas MAGNE TANG.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet"><script>if(localStorage.getItem("portfolio-dark")==="true")document.documentElement.setAttribute("data-theme","dark")</script>
+<style>
+:root{--accent:#0d9488;--text:#18181b;--text-muted:#525252;--text-light:#a3a3a3;--bg:#fafaf9;--bg-alt:#f5f5f4;--surface:#ffffff;--border:#e5e4e2;--border-light:#f0efed;--font-sans:'Inter',system-ui,-apple-system,sans-serif;--font-serif:'Source Serif 4',Georgia,'Times New Roman',serif;--radius-lg:14px;--radius-md:10px;--radius-full:9999px;--shadow-md:0 4px 6px -1px rgba(0,0,0,.05);--shadow-lg:0 10px 15px -3px rgba(0,0,0,.06)}[data-theme="dark"]{--accent:#14b8a6;--accent-dark:#0d9488;--text:#fafaf9;--text-muted:#a3a3a3;--text-light:#737373;--bg:#0a0a0a;--bg-alt:#171717;--surface:#171717;--border:#262626;--border-light:#1f1f1f;--shadow-lg:0 10px 15px -3px rgba(0,0,0,.5)}[data-theme="dark"] .page-nav{background:rgba(10,10,10,.85)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.7}
+.container{max-width:780px;margin:0 auto;padding:0 24px}
+.page-nav{display:flex;justify-content:center;align-items:center;gap:2rem;padding:.8rem 0;border-bottom:1px solid var(--border);background:rgba(250,250,249,.85);backdrop-filter:blur(12px);position:sticky;top:0;z-index:100}
+.page-nav a{font-size:.85rem;font-weight:500;color:var(--text-muted);text-decoration:none;transition:color .2s}
+.page-nav a:hover{color:var(--accent)}
+.dark-toggle{background:none;border:none;cursor:pointer;font-size:1.1rem;padding:2px 4px;line-height:1;transition:transform.2s}
+.dark-toggle:hover{transform:scale(1.15)}
+.lang-select{font-size:.8rem;padding:.25rem .5rem;border:1px solid var(--border);border-radius:var(--radius-md);background:var(--surface);color:var(--text);cursor:pointer;font-family:var(--font-sans)}
+.page-header{padding:3rem 0 2rem;text-align:center}
+.page-header h1{font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.03em;margin-bottom:.35rem}
+.page-header p{font-family:var(--font-serif);font-size:1rem;color:var(--text-muted)}
+.section{padding:2.5rem 0}
+.section-title{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin-bottom:1.25rem;text-align:center}
+.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;max-width:700px;margin:0 auto .75rem}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;transition:all .25s}
+.card:hover{border-color:var(--accent);box-shadow:var(--shadow-md)}
+.card h3{font-size:.95rem;font-weight:600;margin-bottom:.35rem}
+.card p{font-family:var(--font-serif);font-size:.88rem;color:var(--text-muted);line-height:1.65}
+.card-det{font-size:.8rem;color:var(--text-light);margin-top:.35rem}
+.hobby-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;max-width:700px;margin:0 auto}
+.hobby-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;transition:all .25s}
+.hobby-card:hover{border-color:var(--accent);box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.hobby-icon{font-size:1.75rem;margin-bottom:.5rem;display:block}
+.hobby-card h4{font-size:.9rem;font-weight:600;margin-bottom:.25rem}
+.hobby-card p{font-family:var(--font-serif);font-size:.8rem;color:var(--text-muted);line-height:1.5}
+.lang-list{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:500px;margin:0 auto}
+.lang-item{text-align:center;padding:1rem;border:1px solid var(--border);border-radius:var(--radius-md)}
+.lang-item .lang-name{font-weight:600;font-size:.9rem;margin-bottom:.15rem}
+.lang-item .lang-level{font-family:var(--font-serif);font-size:.82rem;color:var(--text-muted)}
+.hobby-tag-list{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;max-width:500px;margin:0 auto}
+.hobby-tag{padding:.4rem .9rem;border:1px solid var(--border);border-radius:var(--radius-full);font-size:.8rem;color:var(--text-muted);transition:all .2s;background:var(--surface)}
+.hobby-tag:hover{border-color:var(--accent);color:var(--accent)}
+.footer{padding:2rem 0;text-align:center;border-top:1px solid var(--border)}
+.footer p{font-size:.8rem;color:var(--text-light)}
+.footer a{color:var(--accent);text-decoration:none}
+[data-lang]{display:none}
+[data-lang].active{display:block}[data-lang].active[style]{display:block}
+span[data-lang].active{display:inline}
+div[data-lang].active{display:block}
+@media(max-width:768px){.card-grid,.hobby-grid{grid-template-columns:1fr}.lang-list{grid-template-columns:1fr}.page-nav{gap:.8rem;flex-wrap:wrap}}
+@media print{@page{margin:.4in}body{font-size:9pt;color:#000}.page-nav{display:none}.card{padding:.5rem;border:1px solid #ddd}}
+</style>
+</head>
+<body>
+
+<nav class="page-nav">
+  <a href="index.html" data-lang="en">Home</a><a href="index.html" data-lang="fr">Accueil</a><a href="index.html" data-lang="es">Inicio</a>
+  <a href="experience.html" data-lang="en">Experience</a><a href="experience.html" data-lang="fr">Expérience</a><a href="experience.html" data-lang="es">Experiencia</a>
+  <a href="publications.html" data-lang="en">Publications</a><a href="publications.html" data-lang="fr">Publications</a><a href="publications.html" data-lang="es">Publicaciones</a>
+  <a href="projects.html" data-lang="en">Projects</a><a href="projects.html" data-lang="fr">Projets</a><a href="projects.html" data-lang="es">Proyectos</a>
+  <a href="interests.html" data-lang="en">Interests</a><a href="interests.html" data-lang="fr">Centres d'intérêt</a><a href="interests.html" data-lang="es">Intereses</a>
+  <select class="lang-select" id="lang-switch" aria-label="Language">
+    <option value="en">EN</option>
+    <option value="fr">FR</option>
+    <option value="es">ES</option>
+  </select>
+</nav>
+
+<header class="page-header"><div class="container">
+  <h1 data-lang="en">Interests &amp; More</h1>
+  <h1 data-lang="fr">Centres d'intérêt &amp; Plus</h1>
+  <h1 data-lang="es">Intereses &amp; Más</h1>
+  <p data-lang="en">Beyond engineering — social activities, hobbies, and personal interests</p>
+  <p data-lang="fr">Au-delà de l'ingénierie — activités sociales, loisirs et intérêts personnels</p>
+  <p data-lang="es">Más allá de la ingeniería — actividades sociales, pasatiempos e intereses personales</p>
+</div></header>
+
+<!-- LANGUAGES -->
+<section class="section">
+<div class="container">
+<div class="section-title" data-lang="en">Languages</div>
+<div class="section-title" data-lang="fr">Langues</div>
+<div class="section-title" data-lang="es">Idiomas</div>
+<div class="lang-list">
+  <div class="lang-item"><div class="lang-name"><span data-lang="en">Spanish</span><span data-lang="fr">Espagnol</span><span data-lang="es">Español</span></div><div class="lang-level"><span data-lang="en">Native</span><span data-lang="fr">Natif</span><span data-lang="es">Nativo</span></div></div>
+  <div class="lang-item"><div class="lang-name"><span data-lang="en">French</span><span data-lang="fr">Français</span><span data-lang="es">Francés</span></div><div class="lang-level"><span data-lang="en">Fluent (Working proficiency)</span><span data-lang="fr">Courant (compétence professionnelle)</span><span data-lang="es">Fluido (competencia profesional)</span></div></div>
+  <div class="lang-item"><div class="lang-name"><span data-lang="en">English</span><span data-lang="fr">Anglais</span><span data-lang="es">Inglés</span></div><div class="lang-level"><span data-lang="en">Professional working proficiency</span><span data-lang="fr">Compétence professionnelle</span><span data-lang="es">Competencia profesional</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section" style="background:var(--bg-alt)">
+<div class="container">
+<div class="section-title" data-lang="en">Certifications &amp; Courses</div>
+<div class="section-title" data-lang="fr">Certifications &amp; Formations</div>
+<div class="section-title" data-lang="es">Certificaciones &amp; Cursos</div>
+<div class="card-grid">
+  <div class="card">
+    <h3 data-lang="en">Battery-Management Systems</h3>
+    <h3 data-lang="fr">Systèmes de Gestion de Batterie (BMS)</h3>
+    <h3 data-lang="es">Sistemas de Gestión de Baterías</h3>
+    <p data-lang="en">University of Colorado Boulder — Coursera. Covers BMS fundamentals, SoC estimation, and cell balancing techniques.</p>
+    <p data-lang="fr">University of Colorado Boulder — Coursera. Principes fondamentaux des BMS, estimation du SoC et techniques d'équilibrage des cellules.</p>
+    <p data-lang="es">University of Colorado Boulder — Coursera. Fundamentos de BMS, estimación de SoC y técnicas de balanceo de celdas.</p>
+  </div>
+  <div class="card">
+    <h3 data-lang="en">NASA Space Apps Challenge 2015</h3>
+    <h3 data-lang="fr">NASA Space Apps Challenge 2015</h3>
+    <h3 data-lang="es">NASA Space Apps Challenge 2015</h3>
+    <p data-lang="en">Local Winner Ecuador. Project: Dropi Alone — ground ozone leaf injury analysis using image processing.</p>
+    <p data-lang="fr">Vainqueur local Équateur. Projet : Dropi Alone — analyse des lésions foliaires dues à l'ozone par traitement d'images.</p>
+    <p data-lang="es">Ganador local Ecuador. Proyecto: Dropi Alone — análisis de lesiones foliares por ozono usando procesamiento de imágenes.</p>
+    <div class="card-det">Global Nominee</div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- HOBBIES -->
+<section class="section">
+<div class="container">
+<div class="section-title" data-lang="en">Hobbies &amp; Passions</div>
+<div class="section-title" data-lang="fr">Loisirs &amp; Passions</div>
+<div class="section-title" data-lang="es">Pasatiempos &amp; Pasiones</div>
+<div class="hobby-grid">
+  <div class="hobby-card">
+    <span class="hobby-icon">🍳</span>
+    <h4 data-lang="en">Cooking</h4><h4 data-lang="fr">Cuisine</h4><h4 data-lang="es">Cocina</h4>
+    <p data-lang="en">Passionate about cooking and exploring cuisines from Ecuador and France. Love experimenting with new recipes and flavors.</p>
+    <p data-lang="fr">Passionné de cuisine, j'explore les traditions culinaires équatoriennes et françaises. J'adore expérimenter de nouvelles recettes.</p>
+    <p data-lang="es">Apasionado por la cocina, exploro tradiciones culinarias de Ecuador y Francia. Me encanta experimentar nuevas recetas y sabores.</p>
+  </div>
+  <div class="hobby-card">
+    <span class="hobby-icon">🔧</span>
+    <h4 data-lang="en">DIY Projects</h4><h4 data-lang="fr">Projets DIY</h4><h4 data-lang="es">Proyectos DIY</h4>
+    <p data-lang="en">Building and repairing electronics, 3D printing, and creating custom hardware solutions at home. From smart home gadgets to battery pack rebuilds.</p>
+    <p data-lang="fr">Construction et réparation d'électronique, impression 3D et création de solutions matérielles personnalisées. Des gadgets connectés aux batteries reconditionnées.</p>
+    <p data-lang="es">Construcción y reparación de electrónica, impresión 3D y creación de soluciones personalizadas. Desde gadgets inteligentes hasta reacondicionamiento de baterías.</p>
+  </div>
+  <div class="hobby-card">
+    <span class="hobby-icon">🔄</span>
+    <h4 data-lang="en">Hardware Repurposing</h4><h4 data-lang="fr">Réutilisation de Matériel</h4><h4 data-lang="es">Reutilización de Hardware</h4>
+    <p data-lang="en">Giving new life to vintage electronics and hardware. Repurposing old devices, restoring retro tech, and finding creative second uses for discarded equipment.</p>
+    <p data-lang="fr">Donner une nouvelle vie aux appareils électroniques vintage. Restauration de matériel rétro et réutilisation créative d'équipements mis au rebut.</p>
+    <p data-lang="es">Dar nueva vida a dispositivos electrónicos antiguos. Restauración de hardware retro y reutilización creativa de equipos descartados.</p>
+  </div>
+  <div class="hobby-card">
+    <span class="hobby-icon">⚽</span>
+    <h4 data-lang="en">Sports &amp; Cycling</h4><h4 data-lang="fr">Sports &amp; Cyclisme</h4><h4 data-lang="es">Deportes &amp; Ciclismo</h4>
+    <p data-lang="en">Avid cyclist and sports enthusiast. Enjoy road cycling, hiking in the French Alps, and staying active through outdoor adventures.</p>
+    <p data-lang="fr">Cycliste passionné et amateur de sport. J'aime le cyclisme sur route, la randonnée dans les Alpes françaises et les aventures en plein air.</p>
+    <p data-lang="es">Ciclista entusiasta y aficionado al deporte. Disfruto del ciclismo de ruta, senderismo en los Alpes franceses y aventuras al aire libre.</p>
+  </div>
+  <div class="hobby-card">
+    <span class="hobby-icon">✈️</span>
+    <h4 data-lang="en">Travel</h4><h4 data-lang="fr">Voyages</h4><h4 data-lang="es">Viajes</h4>
+    <p data-lang="en">Exploring new places and cultures. From Quito to Grenoble to Paris — fascinated by discovering how people live, eat, and innovate around the world.</p>
+    <p data-lang="fr">Explorer de nouveaux lieux et cultures. De Quito à Grenoble en passant par Paris — fasciné par la découverte des modes de vie et des innovations à travers le monde.</p>
+    <p data-lang="es">Explorar nuevos lugares y culturas. De Quito a Grenoble y París — fascinado por descubrir cómo la gente vive, come e innova alrededor del mundo.</p>
+  </div>
+  <div class="hobby-card">
+    <span class="hobby-icon">🌐</span>
+    <h4 data-lang="en">Open Source &amp; Community</h4><h4 data-lang="fr">Open Source &amp; Communauté</h4><h4 data-lang="es">Open Source &amp; Comunidad</h4>
+    <p data-lang="en">Sharing knowledge through open source. Created the UGA thesis LaTeX template used by fellow PhD students. Active in tech communities and mentoring.</p>
+    <p data-lang="fr">Partage de connaissances via l'open source. Créateur du template LaTeX pour thèses UGA utilisé par d'autres doctorants. Actif dans les communautés techniques.</p>
+    <p data-lang="es">Compartir conocimiento a través de open source. Creador de la plantilla LaTeX para tesis UGA usada por otros doctorandos. Activo en comunidades técnicas.</p>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- SOCIAL ACTIVITIES -->
+<section class="section" style="background:var(--bg-alt)">
+<div class="container">
+<div class="section-title" data-lang="en">Social &amp; Community</div>
+<div class="section-title" data-lang="fr">Social &amp; Communautaire</div>
+<div class="section-title" data-lang="es">Social &amp; Comunitario</div>
+<div class="hobby-tag-list">
+  <span class="hobby-tag" data-lang="en">🌍 Originally from Quito, Ecuador</span>
+  <span class="hobby-tag" data-lang="fr">🌍 Originaire de Quito, Équateur</span>
+  <span class="hobby-tag" data-lang="es">🌍 Originario de Quito, Ecuador</span>
+  <span class="hobby-tag">📍 Paris, France</span>
+  <span class="hobby-tag" data-lang="en">🤝 Tech community volunteer</span>
+  <span class="hobby-tag" data-lang="fr">🤝 Bénévole dans les communautés tech</span>
+  <span class="hobby-tag" data-lang="es">🤝 Voluntario en comunidades tech</span>
+  <span class="hobby-tag" data-lang="en">📚 Lifelong learner</span>
+  <span class="hobby-tag" data-lang="fr">📚 Apprentissage continu</span>
+  <span class="hobby-tag" data-lang="es">📚 Aprendizaje continuo</span>
+  <span class="hobby-tag" data-lang="en">🎯 Sustainability advocate</span>
+  <span class="hobby-tag" data-lang="fr">🎯 Défenseur du développement durable</span>
+  <span class="hobby-tag" data-lang="es">🎯 Defensor de la sostenibilidad</span>
+  <span class="hobby-tag" data-lang="en">🏠 Into smart home automation</span>
+  <span class="hobby-tag" data-lang="fr">🏠 Passionné de domotique</span>
+  <span class="hobby-tag" data-lang="es">🏠 Apasionado por domótica</span>
+</div>
+</div>
+</section>
+
+<footer class="footer"><div class="container"><p>© 2026 Nicolas MAGNE TANG — <a href="index.html" data-lang="en">Back to Home</a><a href="index.html" data-lang="fr">Retour à l'accueil</a><a href="index.html" data-lang="es">Volver al Inicio</a></p></div></footer>
+
+<script src="lang.js"></script>
+</body>
+</html>
